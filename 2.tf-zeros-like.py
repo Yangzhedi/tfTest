@@ -1,3 +1,4 @@
+# coding:utf-8
 import tensorflow as tf
 
 tensor = tf.zeros([2,3], tf.float32)
@@ -24,6 +25,7 @@ with tf.Session() as sess:
     print tensor_1d.eval()
     print tensor_2d.eval()
 
+# 从numpy中转换
 import numpy as np
 a = np.zeros((3,3))
 ta = tf.convert_to_tensor(a)
